@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="sito120.css">
+</head>
+<body>
+
+<nav>
+  <ul class="menu">
+   <li class="dropdown">
+  <button class="dropbtn" type="button">Categorie ▼</button>
+  <ul class="dropdown-content">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cappelli.html">Cappelli</a></li>
+    <li><a href="scotch.html">Scotch</a></li>
+    <li><a href="giocattoli.html">Giocattoli</a></li>
+  </ul>
+</li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1 class="page-title">Benvenuto nel catalogo</h1>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-body">
+        <h2>Cappelli</h2>
+        <p>Guarda tutti i cappelli disponibili.</p>
+        <p style="margin-top:10px;"><a href="cappelli.html" style="color:#fff;">Apri →</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h2>Scotch</h2>
+        <p>Tutti i scotch</p>
+        <p style="margin-top:10px;"><a href="scotch.html" style="color:#fff;">Apri →</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h2>Giocattoli</h2>
+        <p>Guarda tutti i cappelli disponibili.</p>
+        <p style="margin-top:10px;"><a href="giocattoli.html" style="color:#fff;">Apri →</a></p>
+      </div>
+  </div>
+</div>
+<script>
+const dropdown = document.querySelector(".dropdown");
+const btn = document.querySelector(".dropbtn");
+
+btn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  dropdown.classList.toggle("open");
+});
+
+document.addEventListener("click", () => {
+  dropdown.classList.remove("open");
+});
+</script>
+</body>
+</html>

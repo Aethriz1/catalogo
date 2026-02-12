@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cappelli</title>
+  <link rel="stylesheet" href="sito120.css">
+</head>
+<body class="page-cappelli">
+
+<nav>
+  <ul class="menu">
+    <li class="dropdown">
+  <button class="dropbtn" type="button">Categorie ▼</button>
+  <ul class="dropdown-content">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cappelli.html">Cappelli</a></li>
+    <li><a href="scotch.html">Accessori</a></li>
+    <li><a href="giocattoli.html">Giocattoli</a></li>
+  </ul>
+</li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1 class="page-title">Cappelli</h1>
+  <p class="page-subtitle">Clicca una categoria dal menu per cambiare pagina.</p>
+
+  <div class="grid">
+
+    <!-- CAMBIA SOLO src=... con i tuoi nomi -->
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello1.jpg" alt="Cappello 1"></div>
+      <div class="card-body"><h2>Cappello 1</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello2.jpg" alt="Cappello 2"></div>
+      <div class="card-body"><h2>Cappello 2</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello3.jpg" alt="Cappello 3"></div>
+      <div class="card-body"><h2>Cappello 3</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello4.jpg" alt="Cappello 4"></div>
+      <div class="card-body"><h2>Cappello 4</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello5.jpg" alt="Cappello 5"></div>
+      <div class="card-body"><h2>Cappello 5</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello6.jpg" alt="Cappello 6"></div>
+      <div class="card-body"><h2>Cappello 6</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello7.jpg" alt="Cappello 7"></div>
+      <div class="card-body"><h2>Cappello 7</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello8.jpg" alt="Cappello 8"></div>
+      <div class="card-body"><h2>Cappello 8</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello9.jpg" alt="Cappello 9"></div>
+      <div class="card-body"><h2>Cappello 9</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello10.jpg" alt="Cappello 10"></div>
+      <div class="card-body"><h2>Cappello 10</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello11.jpg" alt="Cappello 11"></div>
+      <div class="card-body"><h2>Cappello 11</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello12.jpg" alt="Cappello 12"></div>
+      <div class="card-body"><h2>Cappello 12</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello13.jpg" alt="Cappello 13"></div>
+      <div class="card-body"><h2>Cappello 13</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello14.jpg" alt="Cappello 14"></div>
+      <div class="card-body"><h2>Cappello 14</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+    <div class="card">
+      <div class="imgbox"><img src="img/cappello15.jpg" alt="Cappello 15"></div>
+      <div class="card-body"><h2>Cappello 15</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+      <div class="card">
+      <div class="imgbox"><img src="img/cappello20.jpg" alt="Cappello 15"></div>
+      <div class="card-body"><h2>Cappello 20</h2><p class="prezzo">€6,00</p></div>
+    </div>
+
+  </div>
+</div>
+<script>
+const dropdown = document.querySelector(".dropdown");
+const btn = document.querySelector(".dropbtn");
+
+btn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  dropdown.classList.toggle("open");
+});
+
+document.addEventListener("click", () => {
+  dropdown.classList.remove("open");
+});
+</script>
+</body>
+</html>

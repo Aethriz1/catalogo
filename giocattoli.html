@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giocattoli</title>
+<link rel="stylesheet" href="sito120.css">
+</head>
+
+<body class="page-giocattoli">
+
+<nav>
+<ul class="menu">
+<li class="dropdown">
+
+<button class="dropbtn">Categorie ▼</button>
+
+<ul class="dropdown-content">
+<li><a href="index.html">Home</a></li>
+<li><a href="cappelli.html">Cappelli</a></li>
+<li><a href="scotch.html">Scotch</a></li>
+<li><a href="giocattoli.html">Giocattoli</a></li>
+</ul>
+
+</li>
+</ul>
+</nav>
+
+<div class="container">
+
+<h1 class="page-title">Giocattoli</h1>
+<p class="page-subtitle">Giocattoli disponibili</p>
+
+<div class="grid" id="grid-giocattoli"></div>
+
+</div>
+
+
+<!-- SCRIPT PRODOTTI -->
+<script>
+
+const grid = document.getElementById("grid-giocattoli");
+
+for (let i = 1; i <= 43; i++) {
+
+let img = `img/giocattoli (${i}).jpeg`;
+
+grid.innerHTML += `
+<div class="card">
+
+<div class="imgbox">
+<img src="${img}" alt="Giocattolo ${i}">
+</div>
+
+<div class="card-body">
+<h2>Giocattolo ${i}</h2>
+<p class="prezzo">€5,00</p>
+</div>
+
+</div>
+`;
+
+}
+
+</script>
+
+
+<!-- SCRIPT MENU -->
+<script>
+
+const dropdown = document.querySelector(".dropdown");
+const btn = document.querySelector(".dropbtn");
+
+btn.addEventListener("click", (e) => {
+e.stopPropagation();
+dropdown.classList.toggle("open");
+});
+
+document.addEventListener("click", () => {
+dropdown.classList.remove("open");
+});
+
+</script>
+
+</body>
+</html>
